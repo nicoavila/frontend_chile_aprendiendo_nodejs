@@ -4,6 +4,10 @@
 
 4tor Workshop elaborado para la Comunidad Front-end Chile: Aprendiendo Nodejs. En este taller el alumno profundizará conceptos tales como:
 
+* Aprender los comandos básicos de una terminal para utilizar Node
+* Aprender los conceptos básicos de Node
+* Revisar la teoría de HTTP y REST
+* Utilizar ExpressJS para crear una API RESTful
 
 
 El taller tiene una duración de 6hrs.
