@@ -13,3 +13,10 @@ Las inscripciones son mediante Flow. Solo hay 30 cupos disponibles!
 
 ## Pre-requisitos
 Poseer nociones básicas de JavaScript.
+
+# Instalación
+1. Clonar el proyecto en forma local
+2. Ir a la carpeta del proyecto y ejecutar ```npm install```
+3. En la carpeta del proyecto ejecutar ```npm run start```
+4. En un navegador web abrir [http://localhost:3000](http://localhost:3000).
+
