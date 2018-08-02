@@ -1,0 +1,10 @@
+{
+    "usuarios": {
+        "07fa7677-8762-457f-a013-2135aa266d7a": {
+            "nombre": "Nicolas",
+            "apellido": "Avila",
+            "edad": "33",
+            "direccion": "Av. Mordor 777"
+        }
+    }
+}
