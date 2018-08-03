@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aplicación web para consumir API</title>
+</head>
+<body>
+  <h1>Obtener Usuario</h1>
+  <input type="text" id="id_usuario" placeholder="Ingrese el ID del usuario">
+  <button onclick="obtenerUsuario()">Obtener Información</button>
+
+  <div id="contenido"></div>
+
+  <script>
+    function obtenerUsuario() {
+      let id = document.querySelector('#id_usuario').value;
+      fetch('http://localhost:3000/usuarios/' + id).then((resp) => resp.json()).then((resultado) => {
+        switch (resultado.code) {
+          case 404:
+            alert("Usuario no encontrado");
+          break;
+
+          case 200:
+            let contenido = document.querySelector('#contenido');
+            contenido.innerHTML = '';
+            //Recorre la información
+            for (let attr in resultado.data) {
+              let nuevoNodo = document.createElement('li');
+              nuevoNodo.innerText = attr + ' : ' +  resultado.data[attr];
+              contenido.appendChild(nuevoNodo);
+            }
+          break;
+
+          default:
+            alert(resultado.message);
+          break;
+        }
+      }, (error) => {
+        alert("Ocurrió un error de comunicación");
+      })
+    }
+  </script>
+</body>
+</html>

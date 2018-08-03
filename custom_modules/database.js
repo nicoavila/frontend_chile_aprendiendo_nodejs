@@ -34,7 +34,17 @@ module.exports = {
   },
 
   //Obtiene una lista de N usuarios generados con Faker
-  getRandomUsuarios: () => {
-    return true;
+  getRandomUsuarios: (cantidad = 100) => {
+    let usuarios = [];
+    for (let i = 0; i < 100; i++) {
+      usuarios.push({
+        nombre: faker.name.firstName(),
+        apellido: faker.name.lastName(),
+        edad: Math.floor(Math.random() * ((100 - 1) + 1)) + 1,
+        direccion: faker.address.streetAddress(),
+        activo: true
+      });
+    }
+    return usuarios;
   }
 }

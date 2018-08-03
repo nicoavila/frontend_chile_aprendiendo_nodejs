@@ -1,10 +1,16 @@
 const express = require('express');
-const router = express.Router();
 const request = require('request');
+const database = require('../custom_modules/database');
+const router = express.Router();
 
 /* Página de inicio */
 router.get('/', (req, res, next) => {
   return res.status(200).json({ message: 'CASTOR API v1.0' });
+});
+
+/* Obtiene una lista de usuarios random generado con Faker */
+router.get('/random_usuarios', (req, res, next) => {
+  return res.status(200).json(database.getRandomUsuarios());
 });
 
 /* Obtiene toda la lista de recorridos desde el Transantiago */

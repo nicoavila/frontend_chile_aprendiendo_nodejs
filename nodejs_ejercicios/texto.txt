@@ -1,0 +1,4 @@
+Hola Mundo!
+Este es un ejemplo un poco más complejo de Node
+Espero que les guste mucho el workshop
+Saludos de Nico! :)

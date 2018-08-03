@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
 const database = require('../custom_modules/database');
+const router = express.Router();
 
 /* Obtiene toda la colección de usuarios */
 router.get('/', (req, res, next) => {
