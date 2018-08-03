@@ -22,7 +22,9 @@ router.get('/transantiago', (req, res, next) => {
   };
   request(opciones, (err, resp, body) => {
     if (err) {
-      reject(err);
+      res.status(500).json({
+        message: 'Error al comunicar con la API del Transantiago'
+      })
     }
     return res.status(200).json(body);
   });
