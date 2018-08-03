@@ -14,6 +14,7 @@
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
     "node-json-db": "^0.7.5",
+    "request": "^2.87.0",
     "uuid": "^3.3.2"
   }
 }
