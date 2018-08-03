@@ -2,7 +2,7 @@
 
 # Workshop Comunidad Front-End Chile: Aprendiendo Nodejs: Construye una API RESTful con Expresjs
 
-4tor Workshop elaborado para la Comunidad Front-end Chile: Aprendiendo Nodejs. En este taller el alumno profundizará conceptos tales como:
+4to Workshop elaborado para la Comunidad Front-end Chile: Aprendiendo Nodejs. En este taller el alumno profundizará conceptos tales como:
 
 * Aprender los comandos básicos de una terminal para utilizar Node
 * Aprender los conceptos básicos de Node

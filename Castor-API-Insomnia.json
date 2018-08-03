@@ -1,0 +1,239 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-08-03T01:22:51.040Z",
+	"__export_source": "insomnia.desktop.app:v6.0.1",
+	"resources": [
+		{
+			"_id": "wrk_f98482cb8f604152ad0193254d5719e5",
+			"created": 1533215910837,
+			"description": "",
+			"modified": 1533215910837,
+			"name": "Castor API",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_76b70e35fb9c4e99a50e4be6d5e582eb",
+			"color": null,
+			"created": 1533215911073,
+			"data": {
+				"baseUrl": "http://localhost:3000/"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1533215911073,
+			"modified": 1533235643504,
+			"name": "New Environment",
+			"parentId": "wrk_f98482cb8f604152ad0193254d5719e5",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_29e0de08a6cd41e980d452784d9a2c5b",
+			"cookies": [],
+			"created": 1533215911077,
+			"modified": 1533215911077,
+			"name": "Default Jar",
+			"parentId": "wrk_f98482cb8f604152ad0193254d5719e5",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_ff33f6eb6f654ed19667c7f6252c6a22",
+			"created": 1533235770214,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1533235770218,
+			"modified": 1533235770214,
+			"name": "Usuarios",
+			"parentId": "wrk_f98482cb8f604152ad0193254d5719e5",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_2ade62324212431287f9b7aa99d5ced4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_083d317baa8f4de285c4d531623788f7",
+						"name": "nombre",
+						"value": "Nicolas"
+					},
+					{
+						"id": "pair_298bc0aff67441028eabf52deedff007",
+						"name": "apellido",
+						"value": "Avila"
+					},
+					{
+						"id": "pair_b0a79036c1a349f78fae204b6bdcfba8",
+						"name": "edad",
+						"value": "33"
+					},
+					{
+						"id": "pair_2d7ece5ff8b743f3a54f3c33df88542e",
+						"name": "direccion",
+						"value": "Av. Mordor 777"
+					},
+					{
+						"id": "pair_b7600adfcb9849caa75af39f6b5ca552",
+						"name": "estado",
+						"value": "true"
+					}
+				]
+			},
+			"created": 1533235827900,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_10169642b161482c902d8e75fb659574",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533235827900,
+			"method": "POST",
+			"modified": 1533259333106,
+			"name": "Crear Usuario",
+			"parameters": [],
+			"parentId": "fld_ff33f6eb6f654ed19667c7f6252c6a22",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseUrl  }}usuarios",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2aff561de15c4a1f8de3cb87342b9675",
+			"authentication": {},
+			"body": {},
+			"created": 1533236464917,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_10169642b161482c902d8e75fb659574",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533235827950,
+			"method": "GET",
+			"modified": 1533259334064,
+			"name": "Obtener Usuario",
+			"parameters": [],
+			"parentId": "fld_ff33f6eb6f654ed19667c7f6252c6a22",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseUrl  }}usuarios/851fac56-443d-4412-92ba-1d5b895943c5",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e9c9a263d54044c7a04af724c3654f2f",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_083d317baa8f4de285c4d531623788f7",
+						"name": "nombre",
+						"value": "Nico"
+					},
+					{
+						"id": "pair_4e7ef1db6ace44398d42fef85ef06dce",
+						"name": "edad",
+						"value": "30"
+					}
+				]
+			},
+			"created": 1533237196442,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_10169642b161482c902d8e75fb659574",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532191799941.5,
+			"method": "PUT",
+			"modified": 1533259332162,
+			"name": "Editar Usuario",
+			"parameters": [],
+			"parentId": "fld_ff33f6eb6f654ed19667c7f6252c6a22",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseUrl  }}usuarios/851fac56-443d-4412-92ba-1d5b895943c5",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9e364e3fc80f46f090e82b8c27644242",
+			"authentication": {},
+			"body": {},
+			"created": 1533239162482,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_10169642b161482c902d8e75fb659574",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533235828000,
+			"method": "GET",
+			"modified": 1533259335200,
+			"name": "Obtener Usuarios",
+			"parameters": [],
+			"parentId": "fld_ff33f6eb6f654ed19667c7f6252c6a22",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseUrl  }}usuarios/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ea78e238c10a42ed90c40ad48773cddb",
+			"authentication": {},
+			"body": {},
+			"created": 1533240255943,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_10169642b161482c902d8e75fb659574",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1531669785962.25,
+			"method": "DELETE",
+			"modified": 1533259324698,
+			"name": "Eliminar Usuario",
+			"parameters": [],
+			"parentId": "fld_ff33f6eb6f654ed19667c7f6252c6a22",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseUrl  }}usuarios/f71025ab-f576-4648-ab1a-c5a0a406512a",
+			"_type": "request"
+		}
+	]
+}
